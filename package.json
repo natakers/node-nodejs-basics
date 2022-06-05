@@ -16,6 +16,8 @@
     "modules:cjsToEsm": "node src/modules/cjsToEsm.mjs",
     "hash:calcHash":"node src/hash/calcHash.js",
     "streams:read":"node src/streams/read.js",
+    "streams:write":"node src/streams/write.js",
+    "streams:transform":"node src/streams/transform.js",
     "zip:copress": "node src/zip/compress.js",
     "zip:decopress": "node src/zip/decompress.js"
   },

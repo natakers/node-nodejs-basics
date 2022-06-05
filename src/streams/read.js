@@ -10,13 +10,6 @@ export const read = async () => {
   const __dirname = dirname(__filename);
   const pathWay = path.join(__dirname, 'files/fileToRead.txt');
   const stream = createReadStream(pathWay);
-  stream.on('readable', function (chunk) {
-    const data = stream.read();
-    if (chunk !== null) {
-      process.stdout.write('' + data);
-    }
-    
-  });
-
+  stream.pipe(process.stdout)
 };
-read()
+// read()
